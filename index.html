@@ -34,12 +34,18 @@
     .cover {
       width: 100%;
       max-width: 360px;
-      margin: 0 auto 2rem;
+      margin-bottom: 2rem;
     }
     .cover img {
       width: 100%;
       border-radius: 12px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    .intro {
+      max-width: 360px;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      line-height: 1.6;
     }
     .buttons {
       display: flex;
@@ -74,7 +80,10 @@
       h2 { font-size: 1.5rem; }
     }
     @media (min-width: 768px) {
-      .buttons { flex-direction: row; justify-content: center; }
+      .buttons {
+        flex-direction: row;
+        justify-content: center;
+      }
     }
   </style>
 </head>
@@ -88,16 +97,25 @@
     <img src="A_book_cover_illustration_for_a_sleep_guide_titled.png" alt="Guide SonoZen">
   </div>
 
-  <p style="max-width: 400px; margin: 0 auto 2rem; font-size: 1rem; line-height: 1.6;">Téléchargez immédiatement votre <strong>Guide SonoZen</strong> et 3 audios exclusifs pour trouver un sommeil instantané, sans tracas.</p>
+  <p class="intro">
+    Téléchargez immédiatement votre <strong>Guide SonoZen</strong> et les 3 audios exclusifs pour trouver un sommeil instantané, sans tracas.
+  </p>
 
   <div class="buttons">
-    <a href="Guide_SonoZen_FR.pdf" download class="btn">Télécharger le Guide (PDF)</a>
-    <a href="SonoZen_Audios.zip" download class="btn">Télécharger les Audios</a>
+    <a href="Guide_SonoZen_FR.pdf" download class="btn">
+      Télécharger le Guide (PDF)
+    </a>
+    <a href="SonoZen_Audios.zip" download class="btn">
+      Télécharger les Audios
+    </a>
   </div>
 
-  <footer>&copy; 2025 SonoZen. Aucun spam. Désinscription possible à tout moment.</footer>
+  <footer>
+    &copy; 2025 SonoZen. Aucun spam. Désinscription possible à tout moment.
+  </footer>
 </body>
 </html>
+
 
 
 
