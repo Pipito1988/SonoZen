@@ -2,66 +2,100 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guide SonoZen</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      margin: 0;
       font-family: 'Inter', sans-serif;
       background-color: #0d1b2a;
       color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 1rem;
       text-align: center;
-      padding: 2rem;
     }
-    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
-    h2 { font-weight: 400; color: #dce0e6; margin-top: 0; }
-    img {
+    header {
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 2.25rem;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+      color: #a0aec0;
+      margin-bottom: 1.5rem;
+    }
+    .cover {
       width: 100%;
-      max-width: 400px;
+      max-width: 360px;
+      margin: 0 auto 2rem;
+    }
+    .cover img {
+      width: 100%;
       border-radius: 12px;
-      margin: 2rem auto;
       box-shadow: 0 4px 20px rgba(0,0,0,0.3);
     }
-    p { font-size: 1rem; line-height: 1.5; margin-bottom: 2rem; }
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      max-width: 360px;
+      margin-bottom: 2rem;
+    }
     .btn {
-      display: inline-block;
-      margin: 0.5rem;
-      padding: 0.8rem 1.5rem;
+      display: block;
+      padding: 1rem 1.5rem;
       background-color: #3a506b;
       color: #fff;
       text-decoration: none;
       border-radius: 8px;
-      font-weight: 600;
       font-size: 1rem;
+      font-weight: 600;
+      transition: background-color 0.3s;
     }
-    footer { margin-top: 3rem; font-size: 0.8rem; color: #ccc; }
+    .btn:hover {
+      background-color: #2a3a4b;
+    }
+    footer {
+      margin-top: auto;
+      margin-bottom: 1rem;
+      font-size: 0.85rem;
+      color: #718096;
+    }
+    @media (min-width: 480px) {
+      h1 { font-size: 2.5rem; }
+      h2 { font-size: 1.5rem; }
+    }
+    @media (min-width: 768px) {
+      .buttons { flex-direction: row; justify-content: center; }
+    }
   </style>
 </head>
 <body>
-  <h1>Dormez profondément en 10 minutes</h1>
-  <h2>avec ces 7 techniques naturelles éprouvées</h2>
+  <header>
+    <h1>Dormez profondément en 10 minutes</h1>
+    <h2>Avec ces 7 techniques naturelles éprouvées</h2>
+  </header>
 
-  <img 
-    src="A_book_cover_illustration_for_a_sleep_guide_titled.png" 
-    alt="Guide SonoZen" 
-  >
+  <div class="cover">
+    <img src="A_book_cover_illustration_for_a_sleep_guide_titled.png" alt="Guide SonoZen">
+  </div>
 
-  <p>
-    Téléchargez tout de suite votre <strong>Guide SonoZen</strong> 
-    et les 3 audios exclusifs pour un sommeil instantané.
-  </p>
+  <p style="max-width: 400px; margin: 0 auto 2rem; font-size: 1rem; line-height: 1.6;">Téléchargez immédiatement votre <strong>Guide SonoZen</strong> et 3 audios exclusifs pour trouver un sommeil instantané, sans tracas.</p>
 
-  <a href="Guide_SonoZen_FR.pdf" download class="btn">
-    Télécharger le Guide (PDF)
-  </a>
-  <a href="SonoZen_Audios.zip" download class="btn">
-    Télécharger les Audios
-  </a>
+  <div class="buttons">
+    <a href="Guide_SonoZen_FR.pdf" download class="btn">Télécharger le Guide (PDF)</a>
+    <a href="SonoZen_Audios.zip" download class="btn">Télécharger les Audios</a>
+  </div>
 
-  <footer>
-    &copy; 2025 SonoZen. Aucun spam.  
-  </footer>
+  <footer>&copy; 2025 SonoZen. Aucun spam. Désinscription possible à tout moment.</footer>
 </body>
 </html>
 
